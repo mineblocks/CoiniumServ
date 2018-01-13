@@ -37,6 +37,7 @@ namespace CoiniumServ.Algorithms
     {
         // algorithm names
         public const string Blake = "blake";
+        public const string C11 = "c11";
         public const string Fresh = "fresh";
         public const string Fugue = "fugue";
         public const string Groestl = "groestl";
@@ -90,8 +91,9 @@ namespace CoiniumServ.Algorithms
             _applicationContext.Container.Register<IHashAlgorithm, X14>(X14).AsMultiInstance();
             _applicationContext.Container.Register<IHashAlgorithm, X15>(X15).AsMultiInstance();
             _applicationContext.Container.Register<IHashAlgorithm, X17>(X17).AsMultiInstance();
+            _applicationContext.Container.Register<IHashAlgorithm, C11>(C11).AsMultiInstance();
 
-            // misc ones           
+            // misc ones
             _applicationContext.Container.Register<IHashAlgorithm, Blake>(Blake).AsMultiInstance();
             _applicationContext.Container.Register<IHashAlgorithm, Fresh>(Fresh).AsMultiInstance();
             _applicationContext.Container.Register<IHashAlgorithm, Fugue>(Fugue).AsMultiInstance();

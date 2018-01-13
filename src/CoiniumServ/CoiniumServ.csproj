@@ -126,6 +126,7 @@
     <Compile Include="Algorithms\IHashAlgorithm.cs" />
     <Compile Include="Algorithms\IHashAlgorithmStatistics.cs" />
     <Compile Include="Algorithms\Implementations\Blake.cs" />
+    <Compile Include="Algorithms\Implementations\X11.cs" />
     <Compile Include="Algorithms\Implementations\Fresh.cs" />
     <Compile Include="Algorithms\Implementations\Fugue.cs" />
     <Compile Include="Algorithms\Implementations\Groestl.cs" />
